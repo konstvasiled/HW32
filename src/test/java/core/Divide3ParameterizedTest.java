@@ -7,10 +7,10 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
-@RunWith(Parameterized.class);
+@RunWith(Parameterized.class)
 
 public class Divide3ParameterizedTest {
-    @Parameters(name = "Parameter {index}: {1} / {2} / {3} = {0}")
+    @Parameters(name = "Parameter # {index}: {1} / {2} / {3} = {0}")
     public static Collection<Double[]> addNumbers() {
         return Arrays.asList(new Double [][] {
                 {5.0, 125.0, 5.0, 5.0},

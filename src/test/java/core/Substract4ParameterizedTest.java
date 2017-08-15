@@ -7,11 +7,11 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
-@RunWith(Parameterized.class);
+@RunWith(Parameterized.class)
 
 public class Substract4ParameterizedTest {
-    @Parameters(name = "Parameter {index}: {1} - {2} - {3} - {4} = {0}")
-    public static Collection<Double[]> addNumber() {
+    @Parameters(name = "Parameter # {index}: {1} - {2} - {3} - {4} = {0}")
+    public static Collection<Double[]> addNumbers() {
         return Arrays.asList(new Double [][] {
                 {2.0, 24.0, 12.0, 6.0, 4.0},
                 {3.0, 48.0, 24.0, 12.0, 9.0},

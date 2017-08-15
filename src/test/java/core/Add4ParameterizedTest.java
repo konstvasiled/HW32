@@ -7,7 +7,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
-@RunWith(Parameterized.class);
+@RunWith(Parameterized.class)
 
 public class Add4ParameterizedTest {
     @Parameters(name = "Parameter # {index}: {1} + {2} + {3} + {4} = {0}")

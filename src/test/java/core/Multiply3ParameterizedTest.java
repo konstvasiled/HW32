@@ -7,11 +7,11 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 import static org.junit.Assert.assertEquals;
-@RunWith(Parameterized.class);
+@RunWith(Parameterized.class)
 
 public class Multiply3ParameterizedTest {
-    @Parameters(name = "Parameter {index}: {1} * {2} * {3} = {0}")
-    public static Collection<Double[]> addNumber() {
+    @Parameters(name = "Parameter # {index}: {1} * {2} * {3} = {0}")
+    public static Collection<Double[]> addNumbers() {
         return Arrays.asList(new Double [][] {
                 {625.0, 25.0, 5.0, 5.0},
                 {160.0, 8.0, 2.0, 10.0},
