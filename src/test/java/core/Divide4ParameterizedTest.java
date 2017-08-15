@@ -14,8 +14,8 @@ public class Divide4ParameterizedTest {
     public static Collection<Double[]> addNumbers() {
         return Arrays.asList(new Double [][] {
             {6.0, 600.0, 10.0, 2.0, 5.0},
-            {4.0, },
-            {2.0, },
+            {4.0, 400.0, 10.0, 2.0, 5.0},
+            {2.0, 200.0, 10.0, 2.0, 5.0},
         });}
     @Parameter(value = 0) public Double expected;
     @Parameter(value = 1) public Double first;

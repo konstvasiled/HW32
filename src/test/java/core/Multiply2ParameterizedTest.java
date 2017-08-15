@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class Multiply2ParameterizedTest {
     @Parameters(name = "Parameter {index}: {1} * {2} = {0}")
-    public static Collection<Double[]> addNumbers() {
+    public static Collection<Double[]> addNumber() {
         return Arrays.asList(new Double [][] {
             {30.0, 5.0, 6.0},
             {45.0, 9.0, 5.0},
