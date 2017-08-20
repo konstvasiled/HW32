@@ -13,9 +13,9 @@ public class Multiply4ParameterizedTest {
     @Parameters(name = "Parameter # {index}: {1} * {2} * {3} * {4} = {0}")
     public static Collection<Double[]> addNumbers() {
         return Arrays.asList(new Double [][] {
-                {},
-                {},
-                {},
+                {24.0, 1.0, 2.0, 3.0, 4.0},
+                {120.0, 2.0, 6.0, 5.0, 2.0},
+                {80.0, 2.0, 4.0, 5.0, 5.0},
         });}
     @Parameter(value = 0) public Double expected;
     @Parameter(value = 1) public Double first;
